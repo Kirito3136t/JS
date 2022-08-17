@@ -1,0 +1,22 @@
+<html>
+   <meta charset="utf-8"/>
+<body> Demonstrating try catch block</br>
+    <script type="text/javascript">
+      function divide(num1, num2) {
+        console.log("Result of dividing " + num1 + " by " + num2 + " is:" + num1/num2);
+      }
+      
+      try{
+          divide(200,100);
+          //the folllowing line will cause the run time exception, as by mistake method name is wrong
+          divid(200,50);
+          console.log("The code from here does not execute")
+       }
+       catch(e){
+         console.log(e.message)
+         console.log(e.stack)
+       }
+       console.log("This program is expected to be executed")
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<body>
+
+<p>Max between three nos </p>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+
+<script>
+ var a = prompt("Enter Number1 ");
+ var b = prompt("Enter Number2");
+ var c = prompt("Enter Number3");
+ document.getElementById("demo").innerHTML = "Entered Nos are "+ a +" "+ b +" "+ c;
+ 
+     if (a > b && a > c) 
+	{
+        document.getElementById("demo1").innerHTML = "Max is "+a;
+    } 
+	else if (b > c)  
+	{
+        document.getElementById("demo1").innerHTML = "Max is "+b;
+    } 
+	else 
+	{
+        document.getElementById("demo1").innerHTML = "Max is "+c;
+    }
+
+
+</script>
+</body>
+</html>

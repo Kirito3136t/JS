@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>DOM replaceChild() Method</title> 
+	</head> 
+	
+	<body> 
+	
+		<h1 style="color: green;"> 
+			GeeksforGeeks 
+		</h1> 
+		
+		<h2> 
+			DOM replaceChild() Method 
+		</h2> 
+		
+		<p>Sorting Algorithm</p> 
+		<ul id = "listitem"><li>Insertion sort</li> 
+			<li>Merge sort</li> 
+			<li>Bubble sort</li> 
+		</ul> 
+		
+		<button onclick ="Geeks()"> 
+			Click Here! 
+		</button> 
+	
+		<script> 
+		function Geeks() { 
+			var doc = document.createTextNode("Quick sort"); 
+			var list = document.getElementById("listitem").childNodes[0]; 
+			list.replaceChild(doc, list.childNodes[0]); 
+		} 
+		</script> 
+	
+	</body> 
+</html>					 

@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<title> 
+		HTML | DOM insertBefore() Method 
+
+	</title> 
+	<!--Script to insert a new node before existing node-->
+	<script> 
+		function myGeeks() { 
+			var newItem = document.createElement("li"); 
+			var textnode = document.createTextNode("Java"); 
+			newItem.appendChild(textnode); 
+
+			var list = document.getElementById("subjects"); 
+			list.insertBefore(newItem, list.childNodes[2]); 
+		} 
+	</script> 
+</head> 
+
+<body> 
+	<h1> 
+		Welcome To GeeksforGeeks 
+	</h1> 
+
+	<h2> 
+		HTML DOM insertBefore() Method 
+	</h2> 
+
+	<ul id="subjects"> 
+		<li>C++</li> 
+		<li>Python</li> 
+	</ul> 
+
+	<p> 
+		Click on the button to insert an 
+		element before Python 
+	</p> 
+
+	<button onclick="myGeeks()"> 
+		Insert Node 
+	</button> 
+
+</body> 
+
+</html> 

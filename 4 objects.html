@@ -1,0 +1,34 @@
+<html>
+<body>
+
+<h2>JavaScript Statements</h2>
+
+<p>Using of objects</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+// Create and display a variable:
+var car = "BMW";
+document.getElementById("demo").innerHTML = car;
+
+// Create an object:
+var person = {
+    firstName : "Narendra",
+    lastName  : "Modi",
+    age       : 67,
+    eyeColor  : "black"
+};
+
+// Display some data from the object:
+document.getElementById("demo1").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+
+document.getElementById("demo2").innerHTML =person["firstName"] + " " + person["lastName"];
+
+</script>
+
+
+</body>
+</html>

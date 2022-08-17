@@ -1,0 +1,28 @@
+
+<html>
+<head>
+<title>Multiplication Table</title>
+</head>
+
+<body>
+<H3><b>Multiplication Table</b></h3>
+
+<p id="msg"></p>
+
+<script>
+  // Set variables
+  var i = 0;
+   var n = prompt("Enter Number for your multiplication table");
+  var output;
+
+  // Do the 'for' loop
+  for (i = 1; i <= 10; i++) 
+  {
+    output += +(n)+ " X " +(i)+" = "+n*i + "<br>";
+  }
+
+  // Output results to the above HTML element
+  document.getElementById("msg").innerHTML = output;
+</script>
+</body>
+</html>

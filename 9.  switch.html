@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+
+var a = parseInt(prompt("Enter Number1 "));
+var b = parseInt(prompt("Enter Number2 "));
+var c = parseInt(prompt("Enter Your Choice 1-->add 2-->Sub 3-->Mul 4-->Div "));
+ 
+ 
+switch(c) 
+{
+    case 1:
+		
+        document.getElementById("demo").innerHTML = "Addition is " + (a + b);
+        break;
+    case 2:
+        document.getElementById("demo").innerHTML = "Substration is " + (a - b);
+        break;
+    case 3:
+          document.getElementById("demo").innerHTML = "Multiplication is " + (a * b);
+        break;
+    case 4:
+          document.getElementById("demo").innerHTML = "Division is " + (a / b);
+        break;
+	default:
+	      alert("Invalid Choice");
+        break;
+	
+}
+</script>
+
+</body>
+</html>

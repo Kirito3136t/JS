@@ -1,0 +1,50 @@
+
+<html>
+<head>
+
+<script>
+function getCookie(){
+    if (document.cookie.length > 0) {              
+    return(document.cookie);
+  }
+  return null;
+}
+
+function setCookie(NameOfCookie, value, expiredays) {
+var ExpireDate = new Date ();
+ExpireDate.setTime(ExpireDate.getTime() + (expiredays * 24 * 3600 * 1000));
+
+  document.cookie = NameOfCookie + "=" + value + 
+  ((expiredays == null) ? "" : "; expires=" + ExpireDate.toGMTString());
+}
+
+function delCookie (NameOfCookie) {
+  if (getCookie(NameOfCookie)) {
+    document.cookie = NameOfCookie + "=" +
+    "; expires=Thu, 01-Jan-70 00:00:01 GMT";
+  }
+}
+
+function DoTheCookieStuff()
+{
+val=getCookie();
+if (val!=null) {alert('Hi there Good to see you again!')}
+else {username=prompt('Hi - this is your first visit to my page - please enter your name.',"");setCookie('username',username,365)}
+}
+</script>
+
+</head>
+
+<body onLoad="DoTheCookieStuff()">
+<div align="center"><center>
+
+</center></div>
+
+
+  <input type="button" value="Rest Cookie" onclick="delCookie('username')" />
+
+
+
+</body>
+</body>
+</html>
